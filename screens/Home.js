@@ -120,7 +120,7 @@ const Home = ({ navigation }) => {
           renderItem={({ item, index }) => (
             <TrendingCard
               item={item}
-              onPress={() => navigation.navigate("Recipe")}
+              onPress={() => navigation.navigate("Recipe", { recipe: item })}
             />
           )}
         />
